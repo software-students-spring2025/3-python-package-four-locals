@@ -43,3 +43,41 @@ def rollADice(num: int) -> list[int]:
     if num <= 0:
         raise ValueError("Number of rolls must be greater than zero.")
     return [random.randint(1, 6) for _ in range(num)]
+
+
+
+# ============================== Chooser Class  ==============================
+
+class Chooser:
+
+    # Constructor
+    def __init__(self, options):
+    
+        if not options:
+            raise ValueError("Must have at least one option.")
+        self.options = list(options)
+
+
+    # Return a Random Choice
+    def pick(self):
+        return random.choice(self.options)
+    
+
+    # Add Option to Options Array
+    def add_option(self, option):
+        self.options.append(option)
+
+
+    # Remove Option from Options Array
+    def remove_option(self, option):
+
+        if option in self.options:
+            self.options.remove(option)
+        else:
+            raise ValueError("Option not found.")
+
+    # Getter
+    def get_options(self):
+        return self.options
+    
+    

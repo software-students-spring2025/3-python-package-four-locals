@@ -34,7 +34,6 @@ def rockPaperScissors():
     outcomes = ['Rock', 'Paper', 'Scissors']
     return outcomes[random.randint(0, 2)]
 
-print(rockPaperScissors())
 def randomColorGenerator(num: int) -> list[str]:
     if num <= 0:
         raise ValueError("Must generate at least one color.")

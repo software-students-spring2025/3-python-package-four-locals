@@ -45,7 +45,7 @@ def rollADice(num: int) -> list[int]:
     return [random.randint(1, 6) for _ in range(num)]
 
 
-# ============================== Chooser Class  ==============================
+# Chooser Class
 
 class Chooser:
 
@@ -75,12 +75,8 @@ class Chooser:
         else:
             raise ValueError("Option not found.")
 
-    # Getter
-    def get_options(self):
-        return self.options
-    
-    
-# ========================== Magic EightBall Class  ==========================
+
+# Magic EightBall Class 
 
 class MagicEightBall:
 
@@ -98,23 +94,7 @@ class MagicEightBall:
             raise ValueError("No responses in Magic 8-Ball.")
         index = random.randint(0, len(self.responses)-1)
         return self.responses[index]
-    
 
-    # Add New Response 
-    def add_response(self, response: str):
-        self.responses.append(response)
-
-    
-    # Remove Response
-    def remove_response(self, response: str):
-        if response in self.responses:
-            self.responses.remove(response)
-        else:
-            raise ValueError("Response not found.")
-
-    # Getter 
-    def get_responses(self):
-        return self.responses
 
     # Starts a Magic Ball Simulation
     def start_simulation(self):

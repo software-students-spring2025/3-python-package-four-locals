@@ -20,20 +20,6 @@ def roulette(slots=6, starting=1):
     roulette.extra += 1
     return random.randint(1, slots) <= (starting + roulette.extra)
 
-# def roulette(slots=6, starting=1):
-#     if not hasattr(roulette, "extra"):
-#         roulette.extra = 0
-
-#     # Adjust the chance gradually based on the extra value
-#     # For example, increase the chances of winning each time
-#     chance = starting + roulette.extra
-#     result = random.randint(1, slots) <= chance
-
-#     # Increase roulette.extra after each round
-#     roulette.extra += 1
-
-#     return result
-
 def flipACoin(num: int) -> list[str]:
     if num <= 0:
         raise ValueError("Number of flips must be greater than zero.")

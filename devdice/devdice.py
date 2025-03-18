@@ -44,6 +44,25 @@ def rollADice(num: int) -> list[int]:
         raise ValueError("Number of rolls must be greater than zero.")
     return [random.randint(1, 6) for _ in range(num)]
 
+def rockPaperScissors():
+    outcomes = ['Rock', 'Paper', 'Scissors']
+    return outcomes[random.randint(0, 2)]
+
+print(rockPaperScissors())
+def randomColorGenerator(num: int) -> list[str]:
+    if num <= 0:
+        raise ValueError("Must generate at least one color.")
+    
+    def colorGen():
+        hex_color = ''
+        for _ in range(6):
+            hex_color += f"{random.randrange(0, 15):x}"
+        return hex_color
+    
+    if num == 1:
+        return colorGen()
+    
+    return [colorGen() for _ in range(num)]
 
 # ============================== Chooser Class  ==============================
 

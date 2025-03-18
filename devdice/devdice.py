@@ -38,11 +38,7 @@ class Chooser:
         else:
             raise ValueError("Option not found.")
 
-    # Getter
-    def get_options(self):
-        return self.options
-
-# Class for a Magic Eight Ball function
+# Magic EightBall Class 
 class MagicEightBall:
     # Constructor
     def __init__(self):
@@ -57,21 +53,6 @@ class MagicEightBall:
             raise ValueError("No responses in Magic 8-Ball.")
         index = random.randint(0, len(self.responses)-1)
         return self.responses[index]
-    
-    # Add New Response 
-    def add_response(self, response: str):
-        self.responses.append(response)
-
-    # Remove Response
-    def remove_response(self, response: str):
-        if response in self.responses:
-            self.responses.remove(response)
-        else:
-            raise ValueError("Response not found.")
-
-    # Getter 
-    def get_responses(self):
-        return self.responses
 
     # Starts a Magic Ball Simulation
     def start_simulation(self):
@@ -121,10 +102,16 @@ def rollADice(num: int) -> list[int]:
         raise ValueError("Number of rolls must be greater than zero.")
     return [random.randint(1, 6) for _ in range(num)]
 
+# Provides a random rock, paper, scissors outcome
+# Takes no input
+# Returns the rock, paper, scissors outcome as a string
 def rockPaperScissors():
     outcomes = ['Rock', 'Paper', 'Scissors']
     return outcomes[random.randint(0, 2)]
 
+# Generates a random hexcode color
+# Input is number of colors generated
+# Returns generated color hexcode(s) as string
 def randomColorGenerator(num: int) -> list[str]:
     if num <= 0:
         raise ValueError("Must generate at least one color.")

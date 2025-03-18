@@ -5,4 +5,4 @@ def test_shake():
 
     ball = MagicEightBall()
 
-    assert ball.shake() in ball.get_responses()
+    assert ball.shake() in ball.responses

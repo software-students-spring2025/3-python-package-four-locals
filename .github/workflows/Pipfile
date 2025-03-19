@@ -3,11 +3,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[scripts]
+gitcommitlogger = "gitcommitlogger"
+
 [packages]
 gitcommitlogger = "*"
 requests = "*"
 pytz = "*"
 python-dateutil = "*"
+pytest = "*"
+build = "*"
+devdice = {file = ".", editable = true}
 
 [dev-packages]
 

@@ -102,16 +102,21 @@ def rollADice(num: int) -> list[int]:
         raise ValueError("Number of rolls must be greater than zero.")
     return [random.randint(1, 6) for _ in range(num)]
 
-# Provides a random rock, paper, scissors outcome
-# Takes no input
-# Returns the rock, paper, scissors outcome as a string
-def rockPaperScissors():
+# Provides random rock, paper, scissors outcome
+# Input is number of outcomes requested
+# Returns the rock, paper, scissors outcome(s) as a list (string if num=1)
+def rockPaperScissors(num: int = 1) -> list[str]:
+    if num <= 0:
+        raise ValueError("Must request at least one RPS outcome.")
+    
     outcomes = ['Rock', 'Paper', 'Scissors']
-    return outcomes[random.randint(0, 2)]
+    if num == 1:
+        return outcomes[random.randint(0, 2)]
+    return [outcomes[random.randint(0, 2)] for _ in range(num)]
 
 # Generates a random hexcode color
 # Input is number of colors generated
-# Returns generated color hexcode(s) as string
+# Returns generated color hexcode(s) as a list (string if num=1)
 def randomColorGenerator(num: int = 1) -> list[str]:
     if num <= 0:
         raise ValueError("Must generate at least one color.")

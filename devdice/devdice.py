@@ -119,7 +119,7 @@ def randomColorGenerator(num: int) -> list[str]:
     def colorGen():
         hex_color = ''
         for _ in range(6):
-            hex_color += f"{random.randrange(0, 15):x}"
+            hex_color += f"{random.randrange(0, 16):x}"
         return hex_color
     
     if num == 1:

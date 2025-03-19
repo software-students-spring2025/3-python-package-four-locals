@@ -8,7 +8,7 @@ where = ["."]
 [project]
 name = "devdice"
 description = "A package developed with pipenv, built with build using setuptools, uploaded to PyPI using twine, and distributed via pip."
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Benjamin DeWeese", email="bdd6280@nyu.edu" },
 ]

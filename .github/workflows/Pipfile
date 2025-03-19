@@ -13,7 +13,7 @@ pytz = "*"
 python-dateutil = "*"
 pytest = "*"
 build = "*"
-devdice = {file = "./devdice", editable = true}
+devdice = {path = "./devdice", editable = true}
 
 [dev-packages]
 

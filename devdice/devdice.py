@@ -112,14 +112,14 @@ def rockPaperScissors():
 # Generates a random hexcode color
 # Input is number of colors generated
 # Returns generated color hexcode(s) as string
-def randomColorGenerator(num: int) -> list[str]:
+def randomColorGenerator(num: int = 1) -> list[str]:
     if num <= 0:
         raise ValueError("Must generate at least one color.")
     
     def colorGen():
         hex_color = ''
         for _ in range(6):
-            hex_color += f"{random.randrange(0, 15):x}"
+            hex_color += f"{random.randrange(0, 16):x}"
         return hex_color
     
     if num == 1:

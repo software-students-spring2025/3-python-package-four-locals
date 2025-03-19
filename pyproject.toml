@@ -10,7 +10,11 @@ name = "devdice"
 description = "A package developed with pipenv, built with build using setuptools, uploaded to PyPI using twine, and distributed via pip."
 version = "0.0.1"
 authors = [
-  { name="Benjamin DeWeese", email="bdd6280@nyu.edu" },
+  { name="Benjamin DeWeese" },
+  { name="Forrest Williams" },
+  { name="John Ma" },
+  { name="Edwin Chen" },
+
 ]
 license = { file = "LICENSE" }
 readme = "README.md"

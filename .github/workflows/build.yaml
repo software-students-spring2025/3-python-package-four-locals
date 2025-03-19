@@ -2,10 +2,7 @@ name: CI / CD
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
-  push:
-    branches:
-      - main
+    types: [opened, synchronize, reopened, closed]
 
 permissions:
   id-token: write

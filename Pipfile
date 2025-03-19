@@ -11,9 +11,6 @@ gitcommitlogger = "*"
 requests = "*"
 pytz = "*"
 python-dateutil = "*"
-pytest = "*"
-build = "*"
-devdice = {file = ".", editable = true}
 
 [dev-packages]
 

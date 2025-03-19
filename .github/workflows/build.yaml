@@ -29,8 +29,10 @@ jobs:
           pipenv install pytest
           pipenv --venv
           pipenv run python -m pytest
+
   deliver:
     needs: [build]
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

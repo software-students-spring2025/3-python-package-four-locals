@@ -4,6 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+gitcommitlogger = "*"
+requests = "*"
+pytz = "*"
+python-dateutil = "*"
 pytest = "*"
 build = "*"
 devdice = {file = ".", editable = true}

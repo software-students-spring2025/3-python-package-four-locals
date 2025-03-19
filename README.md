@@ -10,6 +10,10 @@ This Python package aims to solve a very acute problem: reducing the amount of w
 
 You can find the link to our package on the PyPI website here.
 
+```
+> **WARNING**: ALTER THIS TO REFLECT PyPI site!
+```
+
 ## Instructions
 
 ### Instructions for importing/using the module
@@ -32,6 +36,10 @@ The repository contains a script called `demo.py` which you can find [here](./de
 
 ### Instructions for contributing to the module's development
 
+```
+> **WARNING**: ALTER THIS TO REFLECT TestPyPI!
+```
+
 ### Instructions for any developer ever
 
 ### Instructions for setting up any environment vartiables and importing any starter data
@@ -41,6 +49,10 @@ There are no environemnt variables or starter data necessary for the system to o
 ### Instructions for any "secret" configuration files
 
 There are no "secret" configuration files such as `.env` or anything of that nature.
+
+```
+> **WARNING**: ALTER THIS TO REFLECT TestPyPl!
+```
 
 ## Contributors
 

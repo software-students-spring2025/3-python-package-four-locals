@@ -8,7 +8,7 @@ where = ["."]
 [project]
 name = "devdice"
 description = "A package developed with pipenv, built with build using setuptools, uploaded to PyPI using twine, and distributed via pip."
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Benjamin DeWeese" },
   { name="Forrest Williams" },
@@ -31,9 +31,9 @@ classifiers = [
 dev = ["pytest"]
 
 [project.urls]
-"Homepage" = "https://github.com/nyu-software-engineering/python-package-example"
-"Repository" = "https://github.com/nyu-software-engineering/python-package-example.git"
-"Bug Tracker" = "https://github.com/nyu-software-engineering/python-package-example/issues"
+"Assignment Page" = "https://github.com/nyu-software-engineering/python-package-example"
+"Repository" = "https://github.com/software-students-spring2025/3-python-package-four-locals"
+"Bug Tracker" = "https://github.com/software-students-spring2025/3-python-package-four-locals/issues"
 
 [project.scripts]
 devdice = "devdice.__main__:main"

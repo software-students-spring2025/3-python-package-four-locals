@@ -8,7 +8,7 @@ This Python package allows developers to use fun randomizing functions to flip a
 
 ## PyPI Website Link
 
-You can find the link to our package on the PyPI website [here](https://test.pypi.org/project/devdice/).
+You can find the link to our package on the PyPI website [here](https://pypi.org/project/devdice/).
 
 ## Installation
 

@@ -1,4 +1,4 @@
-from devdice import flipACoin, rollADice, MagicEightBall, roulette, Chooser, Eliminator, rockPaperScissors, randomColorGenerator
+from devdice import Chooser, Eliminator, MagicEightBall, roulette, flip_a_coin, roll_a_dice, rock_paper_scissors, random_color_generator
 # Introduction and scope
 print("Welcome to DevDice, the all in one Python Package for adding randomness to your projects.")
 print("This package includes the following functions:\n\t1. flipACoin\n\t2. rollADice\n\t3. magicEightBall\n\t4. roulette\n\t5. chooser\n\t6. eliminator\n\t7. rockPaperScissors\n\t8. randomColorGenerator")
@@ -10,19 +10,19 @@ print("This program will now demonstrate the complete functionality of DevDice.\
 # Output - {Output specifications}
 # Demo - {Example function demonstration with input/output}
 
-# flipACoin() demo
+# flip_a_coin() demo
 print("1. Flipping a coin...")
-print("\t Function - flipACoin()")
+print("\t Function - flip_a_coin()")
 print("\t Input - Accepts any integer")
 print("\t Output - A list of random selections as strings from ['Heads', 'Tails']")
-print("\t Demo - flipACoin(5) results in", flipACoin(5), "\n")
+print("\t Demo - flip_a_coin(5) results in", flip_a_coin(5), "\n")
 
-# rollADice() demo
+# roll_a_dice() demo
 print("2. Rolling a dice...")
-print("\t Function - rollADice()")
+print("\t Function - roll_a_dice()")
 print("\t Input - Accepts any integer")
 print("\t Output - A list of random selections as integers from [1, 2, 3, 4, 5, 6]")
-print("\t Demo - rollADice(5) results in", rollADice(5), "\n")
+print("\t Demo - roll_a_dice(5) results in", roll_a_dice(5), "\n")
 
 # MagicEightBall.shake() demo
 demo_magic_8_ball = MagicEightBall()
@@ -58,18 +58,18 @@ print("\t Output - The Object that has been removed from the Eliminator")
 print("\t Demo - An Eliminator Object has been created with option of ['New York', 'Boston', 'Miami', 'Atlanta']")
 print("\t \t  - Eliminator.eliminate() results in", demo_eliminator.eliminate(), "\n")
 
-# rockPaperScissors() demo
+# rock_paper_scissors() demo
 print("7. Playing Rock, Paper, Scissors...")
-print("\t Function - rockPaperScissors()")
+print("\t Function - rock_paper_scissors()")
 print("\t Input - Accepts any integer")
 print("\t Output - A list of random selections as strings from ['Rock', 'Paper', 'Scissors']")
-print("\t Demo - rockPaperScissors(3) results in", rockPaperScissors(3), "\n")
+print("\t Demo - rock_paper_scissors(3) results in", rock_paper_scissors(3), "\n")
 
-# randomColorGenerator() demo
+# random_color_generator() demo
 print("8. Generating a random color...")
-print("\t Function - randomColorGenerator()")
+print("\t Function - random_color_generator()")
 print("\t Input - Accepts any integer")
 print("\t Output - A list of random hex-code colors as strings")
-print("\t Demo - randomColorGenerator(3) results in", randomColorGenerator(3), "\n")
+print("\t Demo - random_color_generator(3) results in", random_color_generator(3), "\n")
 
 print("Thank you for using DevDice!", end="")

@@ -1,7 +1,7 @@
 from devdice import Chooser, Eliminator, MagicEightBall, roulette, flip_a_coin, roll_a_dice, rock_paper_scissors, random_color_generator
 # Introduction and scope
 print("Welcome to DevDice, the all in one Python Package for adding randomness to your projects.")
-print("This package includes the following functions:\n\t1. flipACoin\n\t2. rollADice\n\t3. magicEightBall\n\t4. roulette\n\t5. chooser\n\t6. eliminator\n\t7. rockPaperScissors\n\t8. randomColorGenerator")
+print("This package includes the following functions:\n\t1. flip_a_coin\n\t2. roll_a_dice\n\t3. MagicEightBall\n\t4. roulette\n\t5. Chooser\n\t6. Eliminator\n\t7. rock_paper_scissors\n\t8. random_color_generator")
 print("This program will now demonstrate the complete functionality of DevDice.\n\n")
 
 # Each function is demonstrated and includes the following structured information:

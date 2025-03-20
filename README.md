@@ -4,21 +4,101 @@
 
 ## Description
 
-This Python package aims to solve a very acute problem: reducing the amount of work you have to put in to implement the select functions we have created!
+This Python package allows developers to use fun randomizing functions to flip a coin, roll a dice, generate random colors, choose an option from a list, and much more!
 
 ## PyPI Website Link
 
-You can find the link to our package on the PyPI website here.
+You can find the link to our package on the PyPI website [here](https://test.pypi.org/project/devdice/).
 
+## Installation
+
+Install the `devdice` module with pip:
 ```
-> **WARNING**: ALTER THIS TO REFLECT PyPI site!
+pip install devdice
 ```
 
-## Instructions
+## Importing `devdice` Functions
 
-### Instructions for importing/using the module
+You can use any function in your own projects by it importing `devdice` then calling it directly:
+```
+from devdice import{
+    flipACoin,
+    rollADice,
+    MagicEightBall,
+    roulette,
+    Chooser,
+    Eliminator,
+    rockPaperScissors,
+    randomColorGenerator
+}
 
-#### Setup
+# Flip a coin 5 times
+print(flipACoin(5)) # Possible Output: ['Heads', 'Heads', 'Heads', 'Heads', 'Tails']
+
+# Generate two rock, paper, scissors outcomes
+print(rockPaperScissors(2)) # Possible Output: ['Scissors', 'Rock']
+```
+
+## Usage Examples
+
+### `Eliminator` Class
+```
+elim = Eliminator(['Option A', 'Option B', 'Option C'])
+print(elim.eliminate()) # Removes and returns a random option
+```
+
+### `Chooser` Class
+```
+chooser = Chooser(['Option A', 'Option B', 'Option C'])
+print(chooser.pick()) # Returns a randomly selected option
+```
+
+### `MagicEightBall` Class
+```
+magic_eight_ball = MagicEightBall()
+print(magic_eight_ball.shake()) # Returns a randomly selected Magic Eight Ball response
+```
+
+### `roulette(starting: int)`
+```
+print(roulette(2)) # Spins wheel with 2 of 6 winning positions 
+```
+
+### `flipACoin(num: int)`
+```
+print(flipACoin(5)) # Flips 5 coins
+```
+
+### `rollADice(num: int)`
+```
+print(rollADice(5)) # Rolls 5 dice
+```
+
+### `rockPaperScissors(num: int = 1)`
+```
+print(rockPaperScissors()) # Generates a rock, paper, scissors outcome
+print(rockPaperScissors(2)) # Generates list of 2 rock, paper, scissors outcomes
+```
+
+### `randomColorGenerator(num: int = 1)`
+```
+print(randomColorGenerator()) # Generates a hex-codes color string
+print(randomColorGenerator(2)) # Generates list of 2 hex-codes color strings
+```
+
+### Demonstrative Python Script
+
+The repository contains a script called `demo.py` which you can find [here](./demo.py). This script demonstrates all available functions in the `devdice` package, including details on their expected inputs and outputs.
+
+## Contributing to DevDice's development
+
+- The code is licensed under the [GNU General Public License](./LICENSE)
+- Please use GitHub issues to submit bugs and report issues
+- Feel free to contribute to the code
+
+## Environment Setup for Contributors
+
+### Instructions for any developer ever
 
 1. In your python project's directory, if you have not done so already, create a virtual environment.
 
@@ -30,18 +110,6 @@ You can find the link to our package on the PyPI website here.
 
 5. 
 
-#### Demonstrative Python Script
-
-The repository contains a script called `demo.py` which you can find [here](./demo.py)
-
-### Instructions for contributing to the module's development
-
-```
-> **WARNING**: ALTER THIS TO REFLECT TestPyPI!
-```
-
-### Instructions for any developer ever
-
 ### Instructions for setting up any environment vartiables and importing any starter data
 
 There are no environemnt variables or starter data necessary for the system to operate correctly when run.
@@ -49,10 +117,6 @@ There are no environemnt variables or starter data necessary for the system to o
 ### Instructions for any "secret" configuration files
 
 There are no "secret" configuration files such as `.env` or anything of that nature.
-
-```
-> **WARNING**: ALTER THIS TO REFLECT TestPyPl!
-```
 
 ## Contributors
 

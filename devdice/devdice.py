@@ -7,9 +7,8 @@ import random
 
 class Eliminator:
     """
-    This is a class for an Elimination funtion
+    This is a class for an Elimination function.
     """
-    # Constructor
     def __init__(self, items):
         if len(items) < 2:
             raise ValueError("Must have at least two items.")
@@ -31,9 +30,8 @@ class Eliminator:
 
 class Chooser:
     """
-    This is a class for a Chooser funtion
+    This is a class for a Chooser function.
     """
-    # Constructor
     def __init__(self, options):
         if not options:
             raise ValueError("Must have at least one option.")
@@ -44,6 +42,7 @@ class Chooser:
         Return a Random Choice
         """
         return random.choice(self.options)
+
     def add_option(self, option):
         """
         Add Option to Options Array
@@ -61,9 +60,8 @@ class Chooser:
 
 class MagicEightBall:
     """
-    This is a class for a Magic EightBall function
+    This is a class for a Magic EightBall function.
     """
-    # Constructor
     def __init__(self):
         self.responses = ["Yes, definitely!","For sure!", "100%", "I'd bet my life on it",
                            "Yessir!", "Without a doubt.", "No!", "Definitely Not!","Nahh!",
@@ -79,6 +77,7 @@ class MagicEightBall:
             raise ValueError("No responses in Magic 8-Ball.")
         index = random.randint(0, len(self.responses)-1)
         return self.responses[index]
+
     def start_simulation(self):
         """
         Starts a Magic Ball Simulation

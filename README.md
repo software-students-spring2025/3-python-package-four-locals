@@ -98,17 +98,29 @@ The repository contains a script called `demo.py` which you can find [here](./de
 
 ## Environment Setup for Contributors
 
-### Instructions for any developer ever
+### Virtual Environment Setup
 
-1. In your python project's directory, if you have not done so already, create a virtual environment.
+1. In your python project's directory, if you have not done so already, Create a `pipenv`-managed virtual environment.
 
-2. Enter that virtual enviroment.
+2. Enter that virtual environment: `pipenv shell`.
 
-3. run the command '' in your terminal to install the package.
+3. Install package dependencies: `pip install -r requirements.txt`.
 
-4. In the python file you would like to use the package, add `import devdice` to the top.
+4. Create a Python program file that imports `devdice` and uses it.
 
-5. 
+5. Run the program: `python3 my_program_filename.py`.
+
+6. Exit the virtual environment: `exit`.
+
+### Running Unit Testing
+
+Simple example unit tests are included within the `tests` directory. To run these tests...
+
+1. Install `pytest` into the virtual environment, e.g. `pipenv install pytest`
+
+2. Run the tests from the main project directory: `python3 -m pytest`.
+
+3. Tests should never fail. Any failed tests indicate that the production code is behaving differently from the behavior the tests expect.
 
 ### Instructions for setting up any environment vartiables and importing any starter data
 

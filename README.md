@@ -22,21 +22,21 @@ pip install devdice
 You can use any function in your own projects by it importing `devdice` then calling it directly:
 ```
 from devdice import{
-    flipACoin,
-    rollADice,
-    MagicEightBall,
-    roulette,
-    Chooser,
-    Eliminator,
-    rockPaperScissors,
-    randomColorGenerator
+    Chooser
+    Eliminator
+    MagicEightBall
+    roulette
+    flip_a_coin
+    roll_a_dice
+    rock_paper_scissors
+    random_color_generator
 }
 
 # Flip a coin 5 times
-print(flipACoin(5)) # Possible Output: ['Heads', 'Heads', 'Heads', 'Heads', 'Tails']
+print(flip_a_coin(5)) # Possible Output: ['Heads', 'Heads', 'Heads', 'Heads', 'Tails']
 
 # Generate two rock, paper, scissors outcomes
-print(rockPaperScissors(2)) # Possible Output: ['Scissors', 'Rock']
+print(rock_paper_scissors(2)) # Possible Output: ['Scissors', 'Rock']
 ```
 
 ## Usage Examples
@@ -64,26 +64,26 @@ print(magic_eight_ball.shake()) # Returns a randomly selected Magic Eight Ball r
 print(roulette(2)) # Spins wheel with 2 of 6 winning positions 
 ```
 
-### `flipACoin(num: int)`
+### `flip_a_coin(num: int)`
 ```
-print(flipACoin(5)) # Flips 5 coins
-```
-
-### `rollADice(num: int)`
-```
-print(rollADice(5)) # Rolls 5 dice
+print(flip_a_coin(5)) # Flips 5 coins
 ```
 
-### `rockPaperScissors(num: int = 1)`
+### `roll_a_dice(num: int)`
 ```
-print(rockPaperScissors()) # Generates a rock, paper, scissors outcome
-print(rockPaperScissors(2)) # Generates list of 2 rock, paper, scissors outcomes
+print(roll_a_dice(5)) # Rolls 5 dice
 ```
 
-### `randomColorGenerator(num: int = 1)`
+### `rock_paper_scissors(num: int = 1)`
 ```
-print(randomColorGenerator()) # Generates a hex-codes color string
-print(randomColorGenerator(2)) # Generates list of 2 hex-codes color strings
+print(rock_paper_scissors()) # Generates a rock, paper, scissors outcome
+print(rock_paper_scissors(2)) # Generates list of 2 rock, paper, scissors outcomes
+```
+
+### `random_color_generator(num: int = 1)`
+```
+print(random_color_generator()) # Generates a hex-codes color string
+print(random_color_generator(2)) # Generates list of 2 hex-codes color strings
 ```
 
 ### Demonstrative Python Script

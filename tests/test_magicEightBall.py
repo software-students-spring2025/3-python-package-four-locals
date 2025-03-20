@@ -11,7 +11,7 @@ def test_shake():
 def test_shake_no_responses():
 
     ball = MagicEightBall()
-    ball.responses = [] 
+    ball.responses = ()
 
     with pytest.raises(ValueError):
         ball.shake()
